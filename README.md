@@ -23,3 +23,5 @@
 
 
 ```
+
+- Once you have added your db go to src folder and execute `npx sequelize db:create`
