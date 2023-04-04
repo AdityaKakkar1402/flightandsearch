@@ -1,12 +1,25 @@
-role based arch.
+# WELCOME TO FLIGHT SERVICE
 
-- src
-  - index.js
-    models
-    controllers
-    middlewares
-    services
-    utils
-    configs
-    repositories
-- tests
+## Project Setup
+
+- clone the project
+- Execute `npm install`
+- create `.env` and add
+  - `PORT=3000`
+- Inside `src/config` create `config.json` and paste following piece of code
+
+```
+{
+ "development": {
+   "username": <your db login name>,
+   "password": <database password>,
+   "database": <your database name>,
+   "host": "127.0.0.1",
+   "dialect": "mysql"
+ }
+
+}
+
+
+
+```
