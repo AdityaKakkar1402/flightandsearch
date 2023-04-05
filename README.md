@@ -25,3 +25,13 @@
 ```
 
 - Once you have added your db go to src folder and execute `npx sequelize db:create`
+  and then execute
+
+`npm sequelize db:migrate`
+
+## DB Design
+
+- Airplane Table
+- Flight
+- Airport
+- City
