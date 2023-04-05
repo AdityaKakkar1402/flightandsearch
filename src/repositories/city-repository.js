@@ -7,7 +7,7 @@ class CityRepository {
       return city;
     } catch (err) {
       console.log("something went wrong in repo layer");
-      throw { error };
+      throw { err };
     }
   }
   async deleteCity(cityId) {
@@ -20,7 +20,7 @@ class CityRepository {
       return true;
     } catch (err) {
       console.log("something went wrong in repo layer");
-      throw { error };
+      throw { err };
     }
   }
   async updateCity(cityId, data) {
@@ -33,7 +33,7 @@ class CityRepository {
       return city;
     } catch (err) {
       console.log("something went wrong in repo layer");
-      throw { error };
+      throw { err };
     }
   }
   async getCity(cityId) {
@@ -42,7 +42,7 @@ class CityRepository {
       return city;
     } catch (err) {
       console.log("something went wrong in repo layer");
-      throw { error };
+      throw { err };
     }
   }
 }

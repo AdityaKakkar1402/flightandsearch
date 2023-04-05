@@ -3,7 +3,7 @@ const cityService = new CityService();
 
 const create = async (req, res) => {
   try {
-    const city = await CityService.createCity(req.body);
+    const city = await cityService.createCity(req.body);
     return res.status(201).json({
       data: city,
       success: true,
@@ -11,7 +11,7 @@ const create = async (req, res) => {
       err: {},
     });
   } catch (error) {
-    console.log(err);
+    console.log(error);
     return res.status(500).json({
       data: {},
       success: false,
