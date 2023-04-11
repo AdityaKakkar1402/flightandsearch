@@ -56,7 +56,7 @@ class CrudRepository {
       });
       return result;
     } catch (error) {
-      console.log("something went wrong in crud repo layer");
+      console.log("something went wrong in update repo layer");
       throw { error };
     }
   }
